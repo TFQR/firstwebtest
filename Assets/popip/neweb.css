@@ -1,0 +1,279 @@
+@font-face {
+    src: url(../fonts/Poppins-SemiBold.ttf);
+    font-family: pop;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 700px){
+    .cok{
+        position: absolute;
+        top: 65px;
+        width: 100%;
+        height: 80px;
+        right: 0px;
+        background: black;
+        z-index: 2;  
+    }
+    .cok nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+    .hoho{
+        font-size: 18px;
+    }
+    .barmenu{
+        display: block;
+    }
+}
+body{
+    font-family: pop;
+}
+.kepala{
+    background: rgb(47, 187, 168);
+    color: rgb(43, 38, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    margin-right: auto;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+.logoimg{
+    width: 60px;
+}
+.logotitle{
+    margin-left: -3px;
+    font-size: 30px;
+    font-family: sans-serif cursive;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.menubar{
+    text-decoration: none;
+    color: rgb(223, 219, 213);
+    transition: 0.75s;
+}
+.home{
+    padding: 11px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-radius: 6px;
+}
+.aboutus{
+    padding: 11px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-radius: 6px;
+}
+.product{
+    padding: 11px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-radius: 6px;
+}
+.recommend{
+    padding: 11px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-radius: 6px;
+}
+.bestsell{
+    padding: 11px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-radius: 6px;
+}
+.hoho{
+    margin-right: 8px;
+    align-items: center;
+    color: rgb(11, 3, 124);
+    margin-bottom: 6px;
+}
+.menubar ul li a:hover{
+    background-color: rgb(18, 223, 223);
+    color: rgb(17, 108, 160);
+}
+.home ul li a{
+    background-color: rgb(18, 223, 223);
+    color: rgb(17, 108, 160);
+}
+nav ul{
+    display: flex;
+    margin-right: 10px;
+}
+ul li{
+    list-style: none;
+}
+li{
+    font-size: 18px;
+}
+.cok ul li .submenubar1{
+    display: none;
+}
+.cok ul li:hover .submenubar1{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    background-color: rgb(47, 187, 168);
+    padding: 10px;
+    border-top: none;
+}
+.cok ul li:hover .submenubar1 ul {
+    display: block;
+}
+.submenubar1 ul li{
+    display: block;
+    text-align: center;
+    transition: 0.7s;
+}
+.cok ul li:hover .submenubar1 ul li:hover{
+    padding: 12px;
+    background-color: rgb(18, 223, 223);
+    border-radius: 5px;
+    color: rgb(17, 108, 160);
+    cursor: pointer;
+    margin-top: -2px;
+}
+.cok ul li:hover .submenubar1 ul li{
+    padding: 12px;
+    border-bottom: 3px solid rgb(18, 223, 223);
+    margin-left: 8px;
+    margin-top: -2px;
+}
+.padding1{
+    margin-top: 10px;
+}
+
+.cok ul li .submenubar2{
+    display: none;
+}
+.cok ul li:hover .submenubar2{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    background-color: rgb(47, 187, 168);
+    padding: 10px;
+    border-top: none;
+}
+.cok ul li:hover .submenubar2 ul {
+    display: block;
+}
+.submenubar2 ul li{
+    display: block;
+    text-align: center;
+    transition: 0.7s;
+}
+.cok ul li:hover .submenubar2 ul li:hover{
+    padding: 12px;
+    padding-left: 34px;
+    padding-right: 34px;
+    background-color: rgb(18, 223, 223);
+    border-radius: 5px;
+    color: rgb(17, 108, 160);
+    cursor: pointer;
+    margin-top: -2px;
+}
+.cok ul li:hover .submenubar2 ul li{
+    padding: 12px;
+    border-bottom: 3px solid rgb(18, 223, 223);
+    margin-left: 8px;
+    margin-top: -2px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+.padding2{
+    margin-top: 10px;
+}
+
+.cok ul li .submenubar3{
+    display: none;
+}
+.cok ul li:hover .submenubar3{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    background-color: rgb(47, 187, 168);
+    padding: 10px;
+    border-top: none;
+}
+.cok ul li:hover .submenubar3 ul {
+    display: block;
+}
+.submenubar3 ul li{
+    display: block;
+    text-align: center;
+    transition: 0.7s;
+}
+.cok ul li:hover .submenubar3 ul li:hover{
+    padding: 12px;
+    padding-left: 38px;
+    padding-right: 38px;
+    background-color: rgb(18, 223, 223);
+    border-radius: 5px;
+    color: rgb(17, 108, 160);
+    cursor: pointer;
+    margin-top: -2px;
+    
+}
+.cok ul li:hover .submenubar3 ul li{
+    padding: 12px;
+    border-bottom: 3px solid rgb(18, 223, 223);
+    margin-left: 8px;
+    padding-right: 38px;
+    padding-left: 38px;
+    margin-top: -2px;
+}
+.padding3{
+    margin-top: 10px;
+}
+
+.cok ul li .submenubar4{
+    display: none;
+}
+.cok ul li:hover .submenubar4{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    background-color: rgb(47, 187, 168);
+    padding: 10px;
+    border-top: none;
+}
+.cok ul li:hover .submenubar4 ul {
+    display: block;
+}
+.submenubar4 ul li{
+    display: block;
+    text-align: center;
+    transition: 0.7s;
+}
+.cok ul li:hover .submenubar4 ul li:hover{
+    padding: 12px;
+    background-color: rgb(18, 223, 223);
+    border-radius: 5px;
+    color: rgb(17, 108, 160);
+    cursor: pointer;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-top: -2px;
+
+}
+.cok ul li:hover .submenubar4 ul li{
+    padding: 12px;
+    border-bottom: 3px solid rgb(18, 223, 223);
+    margin-left: 8px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-top: -2px;
+}
+.padding4{
+    margin-top: 10px;
+}

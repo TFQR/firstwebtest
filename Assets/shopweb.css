@@ -1,0 +1,200 @@
+@font-face {
+    src: url(../Assets/fonts/Poppins-SemiBold.ttf);
+    font-family: pop;
+}
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: pop;
+}
+
+nav .logo1{
+    float: left;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 30px;
+}
+.logo1{
+    font-size: 37px;
+    align-items: center;
+    display: inline-flex;
+    cursor: pointer;
+    color: white;
+}
+.logoimg{
+    width: 40px;
+    padding: -10px;
+    border-radius: 100px;
+    background: white;
+    align-items: center;
+}
+.logottl{
+    margin-left: 5px;
+}
+.kepala{
+    align-items: center;
+}
+nav{
+    background: rgb(32, 31, 31);
+}
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 30px;
+    position: relative;
+}
+nav ul li{
+    float: left;
+    display: inline-block;
+    background: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+}
+nav ul li a{
+    color: rgb(240, 236, 231);
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 9px 15px;
+    margin: 10px;
+
+}
+nav ul li a:hover{
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;
+}
+nav ul ul{
+    position: absolute;
+    top: 70px;
+    text-align: center;
+    margin-left: -17px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    border-top: 3px solid #33ffff;
+}
+nav ul ul ul{
+    border-top: none;
+}
+nav ul ul ul li{
+    margin: -5px;
+    padding-top: 5px;
+    background: black;
+}
+nav ul ul li a{
+    line-height: 40px;
+    padding: 10px;
+}
+nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+}
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+.submenubar1{
+    margin-left: -24px;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 165px;
+    float: none;
+    display: list-item;
+    padding-bottom: 8px;
+}
+nav ul ul ul li{
+    position: relative;
+    top: -65px;
+    left: 170px;
+    padding-top: 6px;
+}
+.fa-plus{
+    margin-left: 4px;
+    font-size: 15px;
+}
+.show, .icon1, input{
+    display: none;
+}
+
+@media all and (max-width: 1200px) {
+    nav ul{
+        margin-right: 0px;
+        float: left;
+        text-align: left;
+    }
+    nav .logo1{
+        padding-left: 20px;
+        width: 100%;
+    }
+    nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+    nav ul ul{
+        margin-left: 15px;
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        text-align: left;
+    }
+    nav ul ul ul li{
+        position: static;
+    }
+    .show{
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .submenubar1{
+        position: static;
+        margin-left: 15px;
+    }
+    .subsubmenubar1{
+        margin-left: 20px;
+    }
+    .show:hover{
+        color: cyan;
+        
+    }
+    nav ul li a:hover{
+        box-shadow: none;
+    }
+    .morr{
+        margin-top: -10px;
+    }
+    .icon1{
+        display: block;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .show + a, ul{
+       display: none;
+    }
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+}
